@@ -12,12 +12,14 @@ public class DialogueManager : MonoBehaviour
 
     Message [] currentMessages;
     Actor [] currentActors;
+    AudioSource audioSource;
     int activeMessage = 0;
     public static bool isActive = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         backgroundBox.transform.localScale = Vector3.zero;
     }
 
@@ -29,6 +31,7 @@ public class DialogueManager : MonoBehaviour
 
         Debug.Log("Started conversation! Loaded Messages: " + messages.Length);
         DisplayMessage();
+        audioSource.Play();
         backgroundBox.LeanScale(Vector3.one, 0.5f).setEaseInOutExpo();
     }
 
@@ -52,6 +55,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Conversation ended!");
             backgroundBox.LeanScale(Vector3.zero, 0.5f).setEaseInOutExpo();
             isActive = false;
+            audioSource.Stop();
         }
     }
 
@@ -65,6 +69,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isActive == true) {
             NextMessage();
+            audioSource.Play();
         }
     }
 }
