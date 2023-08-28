@@ -9,14 +9,14 @@ public class MoveSound : MonoBehaviour
     Rigidbody2D rb2D;
     float x, y; 
     
-    // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         rb2D = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // find the player velocity when either going left-right or up-down
+    // if >0, then play the running sound, otherwise turn off when idle 
     void Update()
     {
         x = Input.GetAxis("Horizontal") * speed;

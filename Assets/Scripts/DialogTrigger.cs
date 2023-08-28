@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class DialogTrigger : MonoBehaviour
 {
+    // arrays for messages and actors 
     public Message[] messages;
     public Actor[] actors;
 
+    // assign appropriate actor id and messages for this specifc scneario 
     public void StartDialogue() {
         FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
     }
