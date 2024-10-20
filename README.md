@@ -5,9 +5,6 @@ Programmed the **front-end user interface** by integrating the **dialogue/questi
 
 ### DEMO VIDEO: https://youtu.be/md-ORaqE2Mw
 
-*****CURRENT PROJECT ⋆｡°✩***** 
-<a href="https://emoji.gg/emoji/7027-kittybox"><img src="https://cdn3.emoji.gg/emojis/7027-kittybox.png" width="34px" height="34px" alt="kittybox"></a>
-
 # Tile Maps
 initial screen             | game world                | dialogue 
 :-------------------------:|:-------------------------:|:-------------------------:
