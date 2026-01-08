@@ -3,6 +3,10 @@ This **2D RPG mobile game** is about a player who accompanies their **ferret (fa
 
 Programmed the **front-end user interface** by integrating the **dialogue/questing system, tile mapping, and player movement/animations** by using **Unity** as the game engine and coding the scripts in **C#**. Created initial design on [Figma](https://figma.fun/hXPzgq) and used free assets from itch.io.
 
+Demo: https://www.youtube.com/watch?v=md-ORaqE2Mw 
+<br><br><br><br>
+**WORK IN PROGRESS**
+
 # Tile Maps
 initial screen             | game world                | dialogue 
 :-------------------------:|:-------------------------:|:-------------------------:
